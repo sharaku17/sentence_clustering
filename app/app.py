@@ -63,3 +63,5 @@ if __name__ == "__main__":
 
 
     st.altair_chart(chart)
+    source = source.drop(columns=['tsne_dim_1', 'tsne_dim_2'])
+    st.table(source.style.set_precision(2))
